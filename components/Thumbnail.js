@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { ThumbUpIcon } from '@heroicons/react/outline'
 
-function Thumbnail({ key, result }) {
+function Thumbnail({ result }) {
   const BASE_URL = 'https://image.tmdb.org/t/p/original/';
   const imageUrl = (BASE_URL + (result.backdrop_path || result.poster_path)) ||
                     BASE_URL + result.poster_path;
